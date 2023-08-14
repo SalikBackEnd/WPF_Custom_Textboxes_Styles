@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_Textboxes_Styles"
+        xmlns:custom="clr-namespace:WPF_Textboxes_Styles"
         mc:Ignorable="d"
         Title="Textbox Style" Height="450" Width="800">
     
@@ -20,7 +20,12 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Margin="5">
-            <local:PrimeTextbox Label="Username" LabelColor="#000000"></local:PrimeTextbox>
+            <custom:PrimeTextbox Label="Username" 
+                                 LabelForeground="#000000" 
+                                 FontFamily="Arial"
+                                 FontWeight="Normal"
+                                 TextAlignment="Center"
+                                 ></custom:PrimeTextbox>
         </StackPanel>
         
         
